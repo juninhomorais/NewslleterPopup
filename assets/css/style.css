@@ -1,0 +1,113 @@
+/* general */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --main-color: #a52a2a;
+}
+
+h2 {
+    font-family: 'Oooh Baby', cursive;
+    font-size: 2.87rem;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fcfcfc;
+}
+
+/* popup area */
+#popup-area {
+    background-color: #fff;
+    height: 500px;
+    width: 900px;
+    display: flex;
+    box-shadow: 0px 2px 8px 0px rgb(50 50 50 / 8%)!important;
+    border-radius: 10px;
+}
+#popup-area .left--side {
+    background-image: url("../images/bg-newslleter.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+#popup-area .right--side {
+    flex: 1;
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+#form-area {
+    width: 100%;
+    padding: 40px;
+}
+#form-area p {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+    font-weight: 300;
+    width: 80%;
+}
+#form-area form input {
+    width: 100%;
+    height: 44px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #eee;
+    outline: 0;
+    border-radius: 5px;
+}
+button {
+    cursor: pointer;
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: 1px solid var(--main-color);
+}
+
+/* responsive */
+
+@media (max-width: 960px) {
+    #popup-area {
+        width: 100%;
+        margin: auto 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    #popup-area {
+        flex-direction: column;
+        height: auto;
+    }
+    #popup-area .left--side {
+        min-height: 230px;
+    }
+}
+
+@media (max-width: 480px) {
+    #form-area {
+        padding: 25px;
+    }
+    #form-area p {
+        width: 100%;
+    }
+}
+
+/* horizontal screen */
+
+@media (max-height: 500px) {
+    body {
+        height: auto;
+    }
+    #popup-area {
+        margin: 1.5rem auto;
+    }
+}
