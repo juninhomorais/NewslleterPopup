@@ -33,6 +33,7 @@ body {
 }
 #popup-area .left--side {
     background-image: url("../images/bg-newslleter.jpg");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     flex: 1;
@@ -88,7 +89,10 @@ button {
         height: auto;
     }
     #popup-area .left--side {
-        min-height: 230px;
+        min-height: 200px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
     }
 }
 
