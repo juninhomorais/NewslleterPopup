@@ -6,6 +6,8 @@
 }
 :root {
     --main-color: #a52a2a;
+    --bg-body: #f9f9f9;
+    --bg-main: #fff;
 }
 
 h2 {
@@ -19,12 +21,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fcfcfc;
+    background-color: var(--bg-body);
 }
 
 /* popup area */
 #popup-area {
-    background-color: #fff;
+    background-color: var(--bg-main);
     height: 500px;
     width: 900px;
     display: flex;
